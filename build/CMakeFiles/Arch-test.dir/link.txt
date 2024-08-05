@@ -1,0 +1,1 @@
+/sbin/c++ "CMakeFiles/Arch-test.dir/src/core.cpp.o" "CMakeFiles/Arch-test.dir/src/engine.cpp.o" "CMakeFiles/Arch-test.dir/src/func_container.cpp.o" "CMakeFiles/Arch-test.dir/src/logging.cpp.o" "CMakeFiles/Arch-test.dir/src/mem_track.cpp.o" "CMakeFiles/Arch-test.dir/src/node.cpp.o" "CMakeFiles/Arch-test.dir/src/test.cpp.o" -o Arch-test  _deps/fmt-build/libfmt.a

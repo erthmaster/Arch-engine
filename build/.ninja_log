@@ -1,0 +1,18 @@
+# ninja log v6
+2	31	1722771206838445990	CMakeFiles/Arch-test.dir/src/core.cpp.o	ee90bcad50371edd
+1	326	1722774425395727245	CMakeFiles/Arch-test.dir/src/logging.cpp.o	37089a8485ee2d95
+5	679	1722771206845112716	CMakeFiles/Arch-test.dir/src/mem_track.cpp.o	1a57936beb291ea7
+2073	2113	1722771208911797754	_deps/fmt-build/libfmtd.a	b9f10d3365da2bf4
+2	736	1722771206841779354	CMakeFiles/Arch-test.dir/src/func_container.cpp.o	7906ba50c24f6422
+1	623	1722785626873690334	CMakeFiles/Arch-test.dir/src/engine.cpp.o	abc32222e31a6548
+1	487	1722785692260588079	CMakeFiles/Arch-test.dir/src/test.cpp.o	9e13840ed1a0815f
+1	591	1722785626873690334	CMakeFiles/Arch-test.dir/src/node.cpp.o	92c500eb2b3c2ceb
+1	2073	1722771206838445990	_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o	71adc0b19e06c755
+487	557	1722785692747256458	Arch-test	d58aee95ba85b433
+1	942	1722771206838445990	_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o	c76bf83dbdb1271a
+2	527	1722847975018162150	CMakeFiles/Arch-test.dir/src/engine.cpp.o	abc32222e31a6548
+2	543	1722847975018162150	CMakeFiles/Arch-test.dir/src/test.cpp.o	9e13840ed1a0815f
+2	617	1722847975018162150	CMakeFiles/Arch-test.dir/src/node.cpp.o	92c500eb2b3c2ceb
+617	725	1722847975634829565	Arch-test	d58aee95ba85b433
+1	503	1722848015828211441	CMakeFiles/Arch-test.dir/src/test.cpp.o	9e13840ed1a0815f
+503	563	1722848016328212042	Arch-test	d58aee95ba85b433

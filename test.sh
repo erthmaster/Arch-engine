@@ -1,0 +1,1 @@
+clear && cmake --build build && ./build/Arch-test

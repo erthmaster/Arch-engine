@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/core.cpp.o -c /home/andriy/Arch-engine/src/core.cpp",
+  "file": "/home/andriy/Arch-engine/src/core.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/core.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/engine.cpp.o -c /home/andriy/Arch-engine/src/engine.cpp",
+  "file": "/home/andriy/Arch-engine/src/engine.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/engine.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/func_container.cpp.o -c /home/andriy/Arch-engine/src/func_container.cpp",
+  "file": "/home/andriy/Arch-engine/src/func_container.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/func_container.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/logging.cpp.o -c /home/andriy/Arch-engine/src/logging.cpp",
+  "file": "/home/andriy/Arch-engine/src/logging.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/logging.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/mem_track.cpp.o -c /home/andriy/Arch-engine/src/mem_track.cpp",
+  "file": "/home/andriy/Arch-engine/src/mem_track.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/mem_track.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/node.cpp.o -c /home/andriy/Arch-engine/src/node.cpp",
+  "file": "/home/andriy/Arch-engine/src/node.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/node.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/test.cpp.o -c /home/andriy/Arch-engine/src/test.cpp",
+  "file": "/home/andriy/Arch-engine/src/test.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/test.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o -c /home/andriy/Arch-engine/build/_deps/fmt-src/src/format.cc",
+  "file": "/home/andriy/Arch-engine/build/_deps/fmt-src/src/format.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -g -std=gnu++17 -o _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o -c /home/andriy/Arch-engine/build/_deps/fmt-src/src/os.cc",
+  "file": "/home/andriy/Arch-engine/build/_deps/fmt-src/src/os.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o"
+}
+]
