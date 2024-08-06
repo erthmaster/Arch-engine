@@ -69,24 +69,10 @@ include CMakeFiles/Arch-test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Arch-test.dir/flags.make
 
-CMakeFiles/Arch-test.dir/src/core.cpp.o: CMakeFiles/Arch-test.dir/flags.make
-CMakeFiles/Arch-test.dir/src/core.cpp.o: /home/andriy/Arch-engine/src/core.cpp
-CMakeFiles/Arch-test.dir/src/core.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Arch-test.dir/src/core.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/core.cpp.o -MF CMakeFiles/Arch-test.dir/src/core.cpp.o.d -o CMakeFiles/Arch-test.dir/src/core.cpp.o -c /home/andriy/Arch-engine/src/core.cpp
-
-CMakeFiles/Arch-test.dir/src/core.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Arch-test.dir/src/core.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/core.cpp > CMakeFiles/Arch-test.dir/src/core.cpp.i
-
-CMakeFiles/Arch-test.dir/src/core.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Arch-test.dir/src/core.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/core.cpp -o CMakeFiles/Arch-test.dir/src/core.cpp.s
-
 CMakeFiles/Arch-test.dir/src/engine.cpp.o: CMakeFiles/Arch-test.dir/flags.make
 CMakeFiles/Arch-test.dir/src/engine.cpp.o: /home/andriy/Arch-engine/src/engine.cpp
 CMakeFiles/Arch-test.dir/src/engine.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Arch-test.dir/src/engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Arch-test.dir/src/engine.cpp.o"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/engine.cpp.o -MF CMakeFiles/Arch-test.dir/src/engine.cpp.o.d -o CMakeFiles/Arch-test.dir/src/engine.cpp.o -c /home/andriy/Arch-engine/src/engine.cpp
 
 CMakeFiles/Arch-test.dir/src/engine.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/Arch-test.dir/src/engine.cpp.s: cmake_force
 CMakeFiles/Arch-test.dir/src/func_container.cpp.o: CMakeFiles/Arch-test.dir/flags.make
 CMakeFiles/Arch-test.dir/src/func_container.cpp.o: /home/andriy/Arch-engine/src/func_container.cpp
 CMakeFiles/Arch-test.dir/src/func_container.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Arch-test.dir/src/func_container.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Arch-test.dir/src/func_container.cpp.o"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/func_container.cpp.o -MF CMakeFiles/Arch-test.dir/src/func_container.cpp.o.d -o CMakeFiles/Arch-test.dir/src/func_container.cpp.o -c /home/andriy/Arch-engine/src/func_container.cpp
 
 CMakeFiles/Arch-test.dir/src/func_container.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/Arch-test.dir/src/func_container.cpp.s: cmake_force
 CMakeFiles/Arch-test.dir/src/logging.cpp.o: CMakeFiles/Arch-test.dir/flags.make
 CMakeFiles/Arch-test.dir/src/logging.cpp.o: /home/andriy/Arch-engine/src/logging.cpp
 CMakeFiles/Arch-test.dir/src/logging.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Arch-test.dir/src/logging.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Arch-test.dir/src/logging.cpp.o"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/logging.cpp.o -MF CMakeFiles/Arch-test.dir/src/logging.cpp.o.d -o CMakeFiles/Arch-test.dir/src/logging.cpp.o -c /home/andriy/Arch-engine/src/logging.cpp
 
 CMakeFiles/Arch-test.dir/src/logging.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/Arch-test.dir/src/logging.cpp.s: cmake_force
 CMakeFiles/Arch-test.dir/src/mem_track.cpp.o: CMakeFiles/Arch-test.dir/flags.make
 CMakeFiles/Arch-test.dir/src/mem_track.cpp.o: /home/andriy/Arch-engine/src/mem_track.cpp
 CMakeFiles/Arch-test.dir/src/mem_track.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Arch-test.dir/src/mem_track.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Arch-test.dir/src/mem_track.cpp.o"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/mem_track.cpp.o -MF CMakeFiles/Arch-test.dir/src/mem_track.cpp.o.d -o CMakeFiles/Arch-test.dir/src/mem_track.cpp.o -c /home/andriy/Arch-engine/src/mem_track.cpp
 
 CMakeFiles/Arch-test.dir/src/mem_track.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/Arch-test.dir/src/mem_track.cpp.s: cmake_force
 CMakeFiles/Arch-test.dir/src/node.cpp.o: CMakeFiles/Arch-test.dir/flags.make
 CMakeFiles/Arch-test.dir/src/node.cpp.o: /home/andriy/Arch-engine/src/node.cpp
 CMakeFiles/Arch-test.dir/src/node.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Arch-test.dir/src/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Arch-test.dir/src/node.cpp.o"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/node.cpp.o -MF CMakeFiles/Arch-test.dir/src/node.cpp.o.d -o CMakeFiles/Arch-test.dir/src/node.cpp.o -c /home/andriy/Arch-engine/src/node.cpp
 
 CMakeFiles/Arch-test.dir/src/node.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/Arch-test.dir/src/node.cpp.s: cmake_force
 CMakeFiles/Arch-test.dir/src/test.cpp.o: CMakeFiles/Arch-test.dir/flags.make
 CMakeFiles/Arch-test.dir/src/test.cpp.o: /home/andriy/Arch-engine/src/test.cpp
 CMakeFiles/Arch-test.dir/src/test.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Arch-test.dir/src/test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Arch-test.dir/src/test.cpp.o"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/test.cpp.o -MF CMakeFiles/Arch-test.dir/src/test.cpp.o.d -o CMakeFiles/Arch-test.dir/src/test.cpp.o -c /home/andriy/Arch-engine/src/test.cpp
 
 CMakeFiles/Arch-test.dir/src/test.cpp.i: cmake_force
@@ -167,28 +153,43 @@ CMakeFiles/Arch-test.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Arch-test.dir/src/test.cpp.s"
 	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/test.cpp -o CMakeFiles/Arch-test.dir/src/test.cpp.s
 
+CMakeFiles/Arch-test.dir/src/window.cpp.o: CMakeFiles/Arch-test.dir/flags.make
+CMakeFiles/Arch-test.dir/src/window.cpp.o: /home/andriy/Arch-engine/src/window.cpp
+CMakeFiles/Arch-test.dir/src/window.cpp.o: CMakeFiles/Arch-test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Arch-test.dir/src/window.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Arch-test.dir/src/window.cpp.o -MF CMakeFiles/Arch-test.dir/src/window.cpp.o.d -o CMakeFiles/Arch-test.dir/src/window.cpp.o -c /home/andriy/Arch-engine/src/window.cpp
+
+CMakeFiles/Arch-test.dir/src/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Arch-test.dir/src/window.cpp.i"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/window.cpp > CMakeFiles/Arch-test.dir/src/window.cpp.i
+
+CMakeFiles/Arch-test.dir/src/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Arch-test.dir/src/window.cpp.s"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/window.cpp -o CMakeFiles/Arch-test.dir/src/window.cpp.s
+
 # Object files for target Arch-test
 Arch__test_OBJECTS = \
-"CMakeFiles/Arch-test.dir/src/core.cpp.o" \
 "CMakeFiles/Arch-test.dir/src/engine.cpp.o" \
 "CMakeFiles/Arch-test.dir/src/func_container.cpp.o" \
 "CMakeFiles/Arch-test.dir/src/logging.cpp.o" \
 "CMakeFiles/Arch-test.dir/src/mem_track.cpp.o" \
 "CMakeFiles/Arch-test.dir/src/node.cpp.o" \
-"CMakeFiles/Arch-test.dir/src/test.cpp.o"
+"CMakeFiles/Arch-test.dir/src/test.cpp.o" \
+"CMakeFiles/Arch-test.dir/src/window.cpp.o"
 
 # External object files for target Arch-test
 Arch__test_EXTERNAL_OBJECTS =
 
-Arch-test: CMakeFiles/Arch-test.dir/src/core.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/src/engine.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/src/func_container.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/src/logging.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/src/mem_track.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/src/node.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/src/test.cpp.o
+Arch-test: CMakeFiles/Arch-test.dir/src/window.cpp.o
 Arch-test: CMakeFiles/Arch-test.dir/build.make
 Arch-test: _deps/fmt-build/libfmt.a
+Arch-test: _deps/sdl2-build/libSDL2-2.0.so.0.3000.6
 Arch-test: CMakeFiles/Arch-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Arch-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Arch-test.dir/link.txt --verbose=$(VERBOSE)

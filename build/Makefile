@@ -187,29 +187,83 @@ fmt/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/fmt-build/CMakeFiles/fmt.dir/build.make _deps/fmt-build/CMakeFiles/fmt.dir/build
 .PHONY : fmt/fast
 
-src/core.o: src/core.cpp.o
-.PHONY : src/core.o
+#=============================================================================
+# Target rules for targets named sdl_headers_copy
 
-# target to build an object file
-src/core.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/core.cpp.o
-.PHONY : src/core.cpp.o
+# Build rule for target.
+sdl_headers_copy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdl_headers_copy
+.PHONY : sdl_headers_copy
 
-src/core.i: src/core.cpp.i
-.PHONY : src/core.i
+# fast build rule for target.
+sdl_headers_copy/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build.make _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build
+.PHONY : sdl_headers_copy/fast
 
-# target to preprocess a source file
-src/core.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/core.cpp.i
-.PHONY : src/core.cpp.i
+#=============================================================================
+# Target rules for targets named SDL2main
 
-src/core.s: src/core.cpp.s
-.PHONY : src/core.s
+# Build rule for target.
+SDL2main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2main
+.PHONY : SDL2main
 
-# target to generate assembly for a file
-src/core.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/core.cpp.s
-.PHONY : src/core.cpp.s
+# fast build rule for target.
+SDL2main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2main.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2main.dir/build
+.PHONY : SDL2main/fast
+
+#=============================================================================
+# Target rules for targets named SDL2
+
+# Build rule for target.
+SDL2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2
+.PHONY : SDL2
+
+# fast build rule for target.
+SDL2/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2.dir/build
+.PHONY : SDL2/fast
+
+#=============================================================================
+# Target rules for targets named SDL2-static
+
+# Build rule for target.
+SDL2-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2-static
+.PHONY : SDL2-static
+
+# fast build rule for target.
+SDL2-static/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2-static.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2-static.dir/build
+.PHONY : SDL2-static/fast
+
+#=============================================================================
+# Target rules for targets named SDL2_test
+
+# Build rule for target.
+SDL2_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2_test
+.PHONY : SDL2_test
+
+# fast build rule for target.
+SDL2_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build
+.PHONY : SDL2_test/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/uninstall.dir/build.make _deps/sdl2-build/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
 
 src/engine.o: src/engine.cpp.o
 .PHONY : src/engine.o
@@ -355,6 +409,30 @@ src/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/test.cpp.s
 .PHONY : src/test.cpp.s
 
+src/window.o: src/window.cpp.o
+.PHONY : src/window.o
+
+# target to build an object file
+src/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/window.cpp.o
+.PHONY : src/window.cpp.o
+
+src/window.i: src/window.cpp.i
+.PHONY : src/window.i
+
+# target to preprocess a source file
+src/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/window.cpp.i
+.PHONY : src/window.cpp.i
+
+src/window.s: src/window.cpp.s
+.PHONY : src/window.s
+
+# target to generate assembly for a file
+src/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/window.cpp.s
+.PHONY : src/window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -367,11 +445,14 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... sdl_headers_copy"
+	@echo "... uninstall"
 	@echo "... Arch-test"
+	@echo "... SDL2"
+	@echo "... SDL2-static"
+	@echo "... SDL2_test"
+	@echo "... SDL2main"
 	@echo "... fmt"
-	@echo "... src/core.o"
-	@echo "... src/core.i"
-	@echo "... src/core.s"
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
@@ -390,6 +471,9 @@ help:
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"
+	@echo "... src/window.o"
+	@echo "... src/window.i"
+	@echo "... src/window.s"
 .PHONY : help
 
 

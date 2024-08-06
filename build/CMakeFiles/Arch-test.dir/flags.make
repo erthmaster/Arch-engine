@@ -4,7 +4,7 @@
 # compile CXX with /sbin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include
+CXX_INCLUDES = -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include/SDL2 -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include-config-/SDL2
 
 CXX_FLAGS = -std=gnu++17
 

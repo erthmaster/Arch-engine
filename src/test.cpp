@@ -1,9 +1,5 @@
 #include <iostream>
-#include <vector>
-
-#include "logging.hpp"
-#include "engine.hpp"
-#include "node.hpp"
+#include "Archen.hpp"
 
 void hello()
 {
@@ -15,28 +11,14 @@ void move()
     std::cout << "Moving!" << std::endl;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
     Node core;
-    Engine* engine = new Engine();
 
-    Node scene;
-    scene.name = "SCENE";
-    
-    Node gameObject;
-    gameObject.name = "GAME_OBJECT";
+    App* app = new App(800, 600, (char*)"Game");
+    Engine* engine = new Engine(app, &core, 60);
 
-    gameObject.init.add(hello);
-    gameObject.update.add(move);
-
-    gameObject.update.remove(0);
-
-    scene.addNode(&gameObject);
-    core.addNode(&scene);
-
-    Log::pr(" Хуй" + gameObject.getParent()->name);
-
-    engine->run(&core);
+    engine->run();
 
     return 0;
 }

@@ -82,6 +82,7 @@
         "complex": "cpp",
         "expected": "cpp",
         "source_location": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "*.inc": "cpp"
     }
 }

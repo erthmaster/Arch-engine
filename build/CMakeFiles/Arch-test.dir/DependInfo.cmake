@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/andriy/Arch-engine/src/core.cpp" "CMakeFiles/Arch-test.dir/src/core.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/core.cpp.o.d"
   "/home/andriy/Arch-engine/src/engine.cpp" "CMakeFiles/Arch-test.dir/src/engine.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/engine.cpp.o.d"
   "/home/andriy/Arch-engine/src/func_container.cpp" "CMakeFiles/Arch-test.dir/src/func_container.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/func_container.cpp.o.d"
   "/home/andriy/Arch-engine/src/logging.cpp" "CMakeFiles/Arch-test.dir/src/logging.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/logging.cpp.o.d"
   "/home/andriy/Arch-engine/src/mem_track.cpp" "CMakeFiles/Arch-test.dir/src/mem_track.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/mem_track.cpp.o.d"
   "/home/andriy/Arch-engine/src/node.cpp" "CMakeFiles/Arch-test.dir/src/node.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/node.cpp.o.d"
   "/home/andriy/Arch-engine/src/test.cpp" "CMakeFiles/Arch-test.dir/src/test.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/test.cpp.o.d"
+  "/home/andriy/Arch-engine/src/window.cpp" "CMakeFiles/Arch-test.dir/src/window.cpp.o" "gcc" "CMakeFiles/Arch-test.dir/src/window.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -14,8 +14,13 @@ FetchContent_Declare(
     GIT_REPOSITORY https://github.com/fmtlib/fmt.git
     GIT_TAG 11.0.2
 )
+FetchContent_Declare(
+    sdl2
+    GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
+    GIT_TAG release-2.30.6
+)
 
-FetchContent_MakeAvailable(fmt)
+FetchContent_MakeAvailable(fmt sdl2)
 
 add_executable(Arch-test ${SOURCES})
-target_link_libraries(Arch-test PRIVATE fmt::fmt)
+target_link_libraries(Arch-test PRIVATE fmt::fmt SDL2::SDL2)

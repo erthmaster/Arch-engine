@@ -1,3 +1,5 @@
+#ifndef MEM_TRACK
+
 #include <iostream>
 #include <cstdlib>
 #include <new>
@@ -21,3 +23,5 @@ void operator delete(void* ptr, std::size_t size)
     Log::info("MEM", "Free: " + std::to_string(size));
     free(ptr);
 }
+
+#endif
