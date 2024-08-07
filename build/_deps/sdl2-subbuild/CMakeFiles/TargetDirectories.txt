@@ -1,0 +1,3 @@
+/home/andriy/Arch-engine/build/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate.dir
+/home/andriy/Arch-engine/build/_deps/sdl2-subbuild/CMakeFiles/edit_cache.dir
+/home/andriy/Arch-engine/build/_deps/sdl2-subbuild/CMakeFiles/rebuild_cache.dir

@@ -37,6 +37,18 @@
 },
 {
   "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include/SDL2 -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include-config-debug/SDL2 -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/numerics.cpp.o -c /home/andriy/Arch-engine/src/numerics.cpp",
+  "file": "/home/andriy/Arch-engine/src/numerics.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/numerics.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
+  "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include/SDL2 -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include-config-debug/SDL2 -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/shapes.cpp.o -c /home/andriy/Arch-engine/src/shapes.cpp",
+  "file": "/home/andriy/Arch-engine/src/shapes.cpp",
+  "output": "CMakeFiles/Arch-test.dir/src/shapes.cpp.o"
+},
+{
+  "directory": "/home/andriy/Arch-engine/build",
   "command": "/sbin/g++ -I/home/andriy/Arch-engine/include -I/home/andriy/Arch-engine/build/_deps/fmt-src/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include/SDL2 -I/home/andriy/Arch-engine/build/_deps/sdl2-build/include-config-debug/SDL2 -g -std=gnu++17 -o CMakeFiles/Arch-test.dir/src/test.cpp.o -c /home/andriy/Arch-engine/src/test.cpp",
   "file": "/home/andriy/Arch-engine/src/test.cpp",
   "output": "CMakeFiles/Arch-test.dir/src/test.cpp.o"

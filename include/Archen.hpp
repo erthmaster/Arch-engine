@@ -6,3 +6,5 @@
 #include "mem_track.hpp"
 #include "node.hpp"
 #include "numerics.hpp"
+#include "color.hpp"
+#include "shapes.hpp"

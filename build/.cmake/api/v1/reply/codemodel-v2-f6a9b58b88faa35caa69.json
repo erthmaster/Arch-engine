@@ -15,7 +15,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.30"
+						"string" : "3.28.1"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -115,7 +115,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Arch-test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Arch-test-Debug-f1de7c4844b61ce16f32.json",
+					"jsonFile" : "target-Arch-test-Debug-06c3e338d15bcb9d3de2.json",
 					"name" : "Arch-test",
 					"projectIndex" : 0
 				},

@@ -1,6 +1,6 @@
 #include "numerics.hpp"
 
-Vector2 operator+ (Vector2 v1, Vector2 v2)
+Point operator+ (Point v1, Point v2)
 {
     
 }

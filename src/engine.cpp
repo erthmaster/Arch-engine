@@ -2,8 +2,8 @@
 #include "engine.hpp"
 #include "logging.hpp"
 
-Engine::Engine(App* app, Node* coreNode, const float targetFps)
-: app(app), CORE_NODE(coreNode), TARGET_FPS(targetFps) 
+Engine::Engine(Node* coreNode, const float targetFps)
+: CORE_NODE(coreNode), TARGET_FPS(targetFps) 
 {
 };
 
@@ -11,34 +11,36 @@ Engine::~Engine() {};
 
 bool Engine::state() { return isRunning; }
 
-void Engine::setupSDL()
+bool Engine::setupSDL()
 {
     if(SDL_Init(SDL_INIT_VIDEO) < 0){
         Log::errSDL("SDL", "SDL_Init Error");
-        return;
+        return false;
     }
 
-    sdlWin = SDL_CreateWindow(app->WIN_TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, app->WIN_WIDTH, app->WIN_HEIGHT, SDL_WINDOW_SHOWN);
+    sdlWin = SDL_CreateWindow(App::winTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, App::winWidth, App::winHeight, SDL_WINDOW_SHOWN);
     if(sdlWin == nullptr) {
         Log::errSDL("SDL", "SDL_CreateWindow Error");
         SDL_Quit();
-        return;
+        return false;
     }
 
-    renderer = SDL_CreateRenderer(sdlWin, -1, SDL_RENDERER_ACCELERATED);
-    if(renderer == nullptr) {
+    App::activeRender = SDL_CreateRenderer(sdlWin, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    if(App::activeRender == nullptr) {
         Log::errSDL("SDL", "SDL_CreateRenderer Error");
         SDL_DestroyWindow(sdlWin);
         SDL_Quit();
-        return;
+        return false;
     }
+    return true;
 }
 
 void Engine::run()
 {
     if(isRunning) return; isRunning = true;
 
-    setupSDL();
+    if(!setupSDL())
+        return;
     Log::info("ENGINE", "Inited!");
 
     const int frameDelay = 1000/TARGET_FPS;
@@ -52,12 +54,19 @@ void Engine::run()
 
         while(SDL_PollEvent(&event))
         {
-            if(event.type == SDL_QUIT)
-                isRunning = false;
+            switch (event.type)
+            {
+                case SDL_QUIT:
+                    isRunning = false;
+                    break;
+                
+                default:
+                    break;
+            }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-        SDL_RenderClear(renderer);
+        SDL_SetRenderDrawColor(App::activeRender, App::bgColor.r, App::bgColor.g, App::App::bgColor.b, 255);
+        SDL_RenderClear(App::activeRender);
 
         // Update vvvv
 
@@ -65,7 +74,7 @@ void Engine::run()
 
         // Update ^^^^
 
-        SDL_RenderPresent(renderer);
+        SDL_RenderPresent(App::activeRender);
         
         frameTime = SDL_GetTicks() - frameStart;
         if(frameDelay > frameTime)
@@ -73,11 +82,13 @@ void Engine::run()
     }
 
     stop();
+    return;
 }
 
 void Engine::stop()
 {
-    SDL_DestroyRenderer(renderer);
+    SDL_DestroyRenderer(App::activeRender);
     SDL_DestroyWindow(sdlWin);
     SDL_Quit();
+    return;
 }

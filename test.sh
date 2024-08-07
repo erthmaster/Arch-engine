@@ -1,1 +1,1 @@
-clear && cmake --build build && ./build/Arch-test
+clear && reset && cmake --build build && ./build/Arch-test

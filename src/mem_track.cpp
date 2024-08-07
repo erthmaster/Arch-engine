@@ -1,4 +1,4 @@
-#ifndef MEM_TRACK
+#ifdef MEM_TRACK
 
 #include <iostream>
 #include <cstdlib>

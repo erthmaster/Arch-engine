@@ -1,22 +1,19 @@
 #include <iostream>
 #include "Archen.hpp"
 
-void hello()
+void draw()
 {
-    std::cout << "Hello World!" << std::endl;
-}
-
-void move()
-{
-    std::cout << "Moving!" << std::endl;
+    Draw::rect((Rect){100,100,100,100}, (Color)RED);
 }
 
 int main(int argc, char *argv[])
 {
-    Node core;
+    Node coreNode;
 
-    App* app = new App(800, 600, (char*)"Game");
-    Engine* engine = new Engine(app, &core, 60);
+    coreNode.update.add(draw);
+
+    App::init(800, 600, (char*)"Game", {255,255,255,0});
+    Engine* engine = new Engine(&coreNode, 60);
 
     engine->run();
 

@@ -8,18 +8,16 @@ class Engine final
     bool isRunning = false;
     SDL_Event event;
 
-    App* app;
     SDL_Window* sdlWin;
-    SDL_Renderer* renderer;
 
     Node* CORE_NODE;
 
-    void setupSDL();
+    bool setupSDL();
 
     public:
         const float TARGET_FPS;
 
-        Engine(App* app, Node* coreNode, const float targetFps);
+        Engine(Node* coreNode, const float targetFps);
         ~Engine();
 
         bool state();
