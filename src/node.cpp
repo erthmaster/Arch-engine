@@ -14,6 +14,7 @@ void Node::mainInit()
 
 void Node::mainUpdate()
 {
+    this->update.runAll();
     for (int i = 0; i < size(); i++)
     {
         nodes[i]->mainUpdate();

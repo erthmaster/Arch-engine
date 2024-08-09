@@ -4,6 +4,7 @@
 void draw()
 {
     Draw::rect((Rect){100,100,100,100}, (Color)RED);
+    Draw::line({100, 100}, {200, 200}, BLUE);
 }
 
 int main(int argc, char *argv[])

@@ -9,5 +9,6 @@ namespace Draw
 {
 
 void rect(const Rect rect, const Color color);
+void line(const Point p0, const Point p1, const Color color);
 
 }
