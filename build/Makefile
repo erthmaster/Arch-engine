@@ -162,115 +162,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Arch-test
+# Target rules for targets named Archen
 
 # Build rule for target.
-Arch-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arch-test
-.PHONY : Arch-test
+Archen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Archen
+.PHONY : Archen
 
 # fast build rule for target.
-Arch-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/build
-.PHONY : Arch-test/fast
+Archen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/build
+.PHONY : Archen/fast
 
-#=============================================================================
-# Target rules for targets named fmt
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
 
-# Build rule for target.
-fmt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fmt
-.PHONY : fmt
+# target to build an object file
+src/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
 
-# fast build rule for target.
-fmt/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/fmt-build/CMakeFiles/fmt.dir/build.make _deps/fmt-build/CMakeFiles/fmt.dir/build
-.PHONY : fmt/fast
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
 
-#=============================================================================
-# Target rules for targets named sdl_headers_copy
+# target to preprocess a source file
+src/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
 
-# Build rule for target.
-sdl_headers_copy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdl_headers_copy
-.PHONY : sdl_headers_copy
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
 
-# fast build rule for target.
-sdl_headers_copy/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build.make _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build
-.PHONY : sdl_headers_copy/fast
-
-#=============================================================================
-# Target rules for targets named SDL2main
-
-# Build rule for target.
-SDL2main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2main
-.PHONY : SDL2main
-
-# fast build rule for target.
-SDL2main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2main.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2main.dir/build
-.PHONY : SDL2main/fast
-
-#=============================================================================
-# Target rules for targets named SDL2
-
-# Build rule for target.
-SDL2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2
-.PHONY : SDL2
-
-# fast build rule for target.
-SDL2/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2.dir/build
-.PHONY : SDL2/fast
-
-#=============================================================================
-# Target rules for targets named SDL2-static
-
-# Build rule for target.
-SDL2-static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2-static
-.PHONY : SDL2-static
-
-# fast build rule for target.
-SDL2-static/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2-static.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2-static.dir/build
-.PHONY : SDL2-static/fast
-
-#=============================================================================
-# Target rules for targets named SDL2_test
-
-# Build rule for target.
-SDL2_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2_test
-.PHONY : SDL2_test
-
-# fast build rule for target.
-SDL2_test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build
-.PHONY : SDL2_test/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/uninstall.dir/build.make _deps/sdl2-build/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
+# target to generate assembly for a file
+src/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
 
 src/engine.o: src/engine.cpp.o
 .PHONY : src/engine.o
 
 # target to build an object file
 src/engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/engine.cpp.o
 .PHONY : src/engine.cpp.o
 
 src/engine.i: src/engine.cpp.i
@@ -278,7 +211,7 @@ src/engine.i: src/engine.cpp.i
 
 # target to preprocess a source file
 src/engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/engine.cpp.i
 .PHONY : src/engine.cpp.i
 
 src/engine.s: src/engine.cpp.s
@@ -286,7 +219,7 @@ src/engine.s: src/engine.cpp.s
 
 # target to generate assembly for a file
 src/engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/engine.cpp.s
 .PHONY : src/engine.cpp.s
 
 src/func_container.o: src/func_container.cpp.o
@@ -294,7 +227,7 @@ src/func_container.o: src/func_container.cpp.o
 
 # target to build an object file
 src/func_container.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/func_container.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/func_container.cpp.o
 .PHONY : src/func_container.cpp.o
 
 src/func_container.i: src/func_container.cpp.i
@@ -302,7 +235,7 @@ src/func_container.i: src/func_container.cpp.i
 
 # target to preprocess a source file
 src/func_container.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/func_container.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/func_container.cpp.i
 .PHONY : src/func_container.cpp.i
 
 src/func_container.s: src/func_container.cpp.s
@@ -310,7 +243,7 @@ src/func_container.s: src/func_container.cpp.s
 
 # target to generate assembly for a file
 src/func_container.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/func_container.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/func_container.cpp.s
 .PHONY : src/func_container.cpp.s
 
 src/logging.o: src/logging.cpp.o
@@ -318,7 +251,7 @@ src/logging.o: src/logging.cpp.o
 
 # target to build an object file
 src/logging.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/logging.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/logging.cpp.o
 .PHONY : src/logging.cpp.o
 
 src/logging.i: src/logging.cpp.i
@@ -326,7 +259,7 @@ src/logging.i: src/logging.cpp.i
 
 # target to preprocess a source file
 src/logging.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/logging.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/logging.cpp.i
 .PHONY : src/logging.cpp.i
 
 src/logging.s: src/logging.cpp.s
@@ -334,7 +267,7 @@ src/logging.s: src/logging.cpp.s
 
 # target to generate assembly for a file
 src/logging.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/logging.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/logging.cpp.s
 .PHONY : src/logging.cpp.s
 
 src/mem_track.o: src/mem_track.cpp.o
@@ -342,7 +275,7 @@ src/mem_track.o: src/mem_track.cpp.o
 
 # target to build an object file
 src/mem_track.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/mem_track.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/mem_track.cpp.o
 .PHONY : src/mem_track.cpp.o
 
 src/mem_track.i: src/mem_track.cpp.i
@@ -350,7 +283,7 @@ src/mem_track.i: src/mem_track.cpp.i
 
 # target to preprocess a source file
 src/mem_track.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/mem_track.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/mem_track.cpp.i
 .PHONY : src/mem_track.cpp.i
 
 src/mem_track.s: src/mem_track.cpp.s
@@ -358,7 +291,7 @@ src/mem_track.s: src/mem_track.cpp.s
 
 # target to generate assembly for a file
 src/mem_track.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/mem_track.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/mem_track.cpp.s
 .PHONY : src/mem_track.cpp.s
 
 src/node.o: src/node.cpp.o
@@ -366,7 +299,7 @@ src/node.o: src/node.cpp.o
 
 # target to build an object file
 src/node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/node.cpp.o
 .PHONY : src/node.cpp.o
 
 src/node.i: src/node.cpp.i
@@ -374,7 +307,7 @@ src/node.i: src/node.cpp.i
 
 # target to preprocess a source file
 src/node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/node.cpp.i
 .PHONY : src/node.cpp.i
 
 src/node.s: src/node.cpp.s
@@ -382,56 +315,56 @@ src/node.s: src/node.cpp.s
 
 # target to generate assembly for a file
 src/node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/node.cpp.s
 .PHONY : src/node.cpp.s
 
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
+src/numerics.o: src/numerics.cpp.o
+.PHONY : src/numerics.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/numerics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/numerics.cpp.o
+.PHONY : src/numerics.cpp.o
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/numerics.i: src/numerics.cpp.i
+.PHONY : src/numerics.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/numerics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/numerics.cpp.i
+.PHONY : src/numerics.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/numerics.s: src/numerics.cpp.s
+.PHONY : src/numerics.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/numerics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/numerics.cpp.s
+.PHONY : src/numerics.cpp.s
 
-src/window.o: src/window.cpp.o
-.PHONY : src/window.o
+src/shapes.o: src/shapes.cpp.o
+.PHONY : src/shapes.o
 
 # target to build an object file
-src/window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/window.cpp.o
-.PHONY : src/window.cpp.o
+src/shapes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/shapes.cpp.o
+.PHONY : src/shapes.cpp.o
 
-src/window.i: src/window.cpp.i
-.PHONY : src/window.i
+src/shapes.i: src/shapes.cpp.i
+.PHONY : src/shapes.i
 
 # target to preprocess a source file
-src/window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/window.cpp.i
-.PHONY : src/window.cpp.i
+src/shapes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/shapes.cpp.i
+.PHONY : src/shapes.cpp.i
 
-src/window.s: src/window.cpp.s
-.PHONY : src/window.s
+src/shapes.s: src/shapes.cpp.s
+.PHONY : src/shapes.s
 
 # target to generate assembly for a file
-src/window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Arch-test.dir/build.make CMakeFiles/Arch-test.dir/src/window.cpp.s
-.PHONY : src/window.cpp.s
+src/shapes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/shapes.cpp.s
+.PHONY : src/shapes.cpp.s
 
 # Help Target
 help:
@@ -445,14 +378,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... sdl_headers_copy"
-	@echo "... uninstall"
-	@echo "... Arch-test"
-	@echo "... SDL2"
-	@echo "... SDL2-static"
-	@echo "... SDL2_test"
-	@echo "... SDL2main"
-	@echo "... fmt"
+	@echo "... Archen"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
@@ -468,12 +397,12 @@ help:
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
-	@echo "... src/window.o"
-	@echo "... src/window.i"
-	@echo "... src/window.s"
+	@echo "... src/numerics.o"
+	@echo "... src/numerics.i"
+	@echo "... src/numerics.s"
+	@echo "... src/shapes.o"
+	@echo "... src/shapes.i"
+	@echo "... src/shapes.s"
 .PHONY : help
 
 

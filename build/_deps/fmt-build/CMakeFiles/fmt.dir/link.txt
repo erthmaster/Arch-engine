@@ -1,2 +1,0 @@
-/sbin/ar qc libfmt.a CMakeFiles/fmt.dir/src/format.cc.o CMakeFiles/fmt.dir/src/os.cc.o
-/sbin/ranlib libfmt.a

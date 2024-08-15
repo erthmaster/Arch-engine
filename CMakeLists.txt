@@ -1,26 +1,36 @@
 cmake_minimum_required(VERSION 3.28.1)
-project(Arch-engine VERSION 0.0)
+project(Archen 
+        VERSION 0.0 
+        DESCRIPTION "A Game engine written in c++")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/obj")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/obj")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/obj")
 
-file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${PROJECT_SOURCE_DIR}/build/obj")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${PROJECT_SOURCE_DIR}/build/obj")
 
-include(FetchContent)
-FetchContent_Declare(
-    fmt
-    GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-    GIT_TAG 11.0.2
+file(GLOB SOURCES "src/*.cpp")
+
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+
+add_library(Archen STATIC ${SOURCES})
+target_link_libraries(Archen PRIVATE SDL2::SDL2)
+target_include_directories(Archen PUBLIC 
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/include/ArchenLib
+    ${SDL2_INCLUDE_DIRS}
 )
-FetchContent_Declare(
-    sdl2
-    GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
-    GIT_TAG release-2.30.6
+
+install(TARGETS Archen
+        LIBRARY DESTINATION /usr/lib
+        ARCHIVE DESTINATION /usr/lib
+        RUNTIME DESTINATION /usr/bin
 )
 
-FetchContent_MakeAvailable(fmt sdl2)
-
-add_executable(Arch-test ${SOURCES})
-target_link_libraries(Arch-test PRIVATE fmt::fmt SDL2::SDL2)
+install(DIRECTORY include/ArchenLib/ DESTINATION /usr/include/ArchenLib)
+install(FILES include/Archen DESTINATION /usr/include)
