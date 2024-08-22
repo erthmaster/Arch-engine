@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andriy/Arch-engine
+CMAKE_SOURCE_DIR = /home/andriy/Archen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andriy/Arch-engine/build
+CMAKE_BINARY_DIR = /home/andriy/Archen/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andriy/Arch-engine/build/CMakeFiles /home/andriy/Arch-engine/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andriy/Archen/build/CMakeFiles /home/andriy/Archen/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andriy/Arch-engine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andriy/Archen/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,6 +198,30 @@ src/app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/app.cpp.s
 .PHONY : src/app.cpp.s
 
+src/color.o: src/color.cpp.o
+.PHONY : src/color.o
+
+# target to build an object file
+src/color.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/color.cpp.o
+.PHONY : src/color.cpp.o
+
+src/color.i: src/color.cpp.i
+.PHONY : src/color.i
+
+# target to preprocess a source file
+src/color.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/color.cpp.i
+.PHONY : src/color.cpp.i
+
+src/color.s: src/color.cpp.s
+.PHONY : src/color.s
+
+# target to generate assembly for a file
+src/color.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/color.cpp.s
+.PHONY : src/color.cpp.s
+
 src/engine.o: src/engine.cpp.o
 .PHONY : src/engine.o
 
@@ -221,6 +245,30 @@ src/engine.s: src/engine.cpp.s
 src/engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/engine.cpp.s
 .PHONY : src/engine.cpp.s
+
+src/event.o: src/event.cpp.o
+.PHONY : src/event.o
+
+# target to build an object file
+src/event.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/event.cpp.o
+.PHONY : src/event.cpp.o
+
+src/event.i: src/event.cpp.i
+.PHONY : src/event.i
+
+# target to preprocess a source file
+src/event.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/event.cpp.i
+.PHONY : src/event.cpp.i
+
+src/event.s: src/event.cpp.s
+.PHONY : src/event.s
+
+# target to generate assembly for a file
+src/event.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/event.cpp.s
+.PHONY : src/event.cpp.s
 
 src/func_container.o: src/func_container.cpp.o
 .PHONY : src/func_container.o
@@ -342,6 +390,30 @@ src/numerics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/numerics.cpp.s
 .PHONY : src/numerics.cpp.s
 
+src/renderer.o: src/renderer.cpp.o
+.PHONY : src/renderer.o
+
+# target to build an object file
+src/renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/renderer.cpp.o
+.PHONY : src/renderer.cpp.o
+
+src/renderer.i: src/renderer.cpp.i
+.PHONY : src/renderer.i
+
+# target to preprocess a source file
+src/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/renderer.cpp.i
+.PHONY : src/renderer.cpp.i
+
+src/renderer.s: src/renderer.cpp.s
+.PHONY : src/renderer.s
+
+# target to generate assembly for a file
+src/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/renderer.cpp.s
+.PHONY : src/renderer.cpp.s
+
 src/shapes.o: src/shapes.cpp.o
 .PHONY : src/shapes.o
 
@@ -366,6 +438,30 @@ src/shapes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/shapes.cpp.s
 .PHONY : src/shapes.cpp.s
 
+src/window.o: src/window.cpp.o
+.PHONY : src/window.o
+
+# target to build an object file
+src/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/window.cpp.o
+.PHONY : src/window.cpp.o
+
+src/window.i: src/window.cpp.i
+.PHONY : src/window.i
+
+# target to preprocess a source file
+src/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/window.cpp.i
+.PHONY : src/window.cpp.i
+
+src/window.s: src/window.cpp.s
+.PHONY : src/window.s
+
+# target to generate assembly for a file
+src/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Archen.dir/build.make CMakeFiles/Archen.dir/src/window.cpp.s
+.PHONY : src/window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -382,9 +478,15 @@ help:
 	@echo "... src/app.o"
 	@echo "... src/app.i"
 	@echo "... src/app.s"
+	@echo "... src/color.o"
+	@echo "... src/color.i"
+	@echo "... src/color.s"
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
+	@echo "... src/event.o"
+	@echo "... src/event.i"
+	@echo "... src/event.s"
 	@echo "... src/func_container.o"
 	@echo "... src/func_container.i"
 	@echo "... src/func_container.s"
@@ -400,9 +502,15 @@ help:
 	@echo "... src/numerics.o"
 	@echo "... src/numerics.i"
 	@echo "... src/numerics.s"
+	@echo "... src/renderer.o"
+	@echo "... src/renderer.i"
+	@echo "... src/renderer.s"
 	@echo "... src/shapes.o"
 	@echo "... src/shapes.i"
 	@echo "... src/shapes.s"
+	@echo "... src/window.o"
+	@echo "... src/window.i"
+	@echo "... src/window.s"
 .PHONY : help
 
 

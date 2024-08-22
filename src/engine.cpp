@@ -1,34 +1,31 @@
 #include <iostream>
 #include "engine.hpp"
 #include "logging.hpp"
+#include <SDL2/SDL.h>
+#define LOG(x) std::cout << x << std::endl;
 
-Engine::Engine(Node* coreNode, const float targetFps)
-: CORE_NODE(coreNode), TARGET_FPS(targetFps) 
+bool Engine::state() { return App::isRunning; }
+
+bool Engine::setup()
 {
-};
-
-Engine::~Engine() {};
-
-bool Engine::state() { return isRunning; }
-
-bool Engine::setupSDL()
-{
-    if(SDL_Init(SDL_INIT_VIDEO) < 0){
-        Log::errSDL("SDL", "SDL_Init Error");
+    if(SDL_Init(SDL_INIT_VIDEO) != 0){
+        Log::errSDL("SDL_Init Error");
         return false;
     }
 
-    sdlWin = SDL_CreateWindow(App::winTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, App::winWidth, App::winHeight, SDL_WINDOW_SHOWN);
-    if(sdlWin == nullptr) {
-        Log::errSDL("SDL", "SDL_CreateWindow Error");
+    if(!App::window->create(App::winTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, App::winWidth, App::winHeight, SDL_WINDOW_SHOWN));
+    {
+        Log::errSDL("SDL_CreateWindow Error");
         SDL_Quit();
         return false;
     }
 
-    App::activeRender = SDL_CreateRenderer(sdlWin, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    if(App::activeRender == nullptr)
+        App::activeRender = new Renderer(App::window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+
     if(App::activeRender == nullptr) {
-        Log::errSDL("SDL", "SDL_CreateRenderer Error");
-        SDL_DestroyWindow(sdlWin);
+        Log::errSDL("SDL_CreateRenderer Error");
+        App::window->~Window();
         SDL_Quit();
         return false;
     }
@@ -37,27 +34,25 @@ bool Engine::setupSDL()
 
 void Engine::run()
 {
-    if(isRunning) return; isRunning = true;
+    if(App::isRunning) return; App::isRunning = true;
 
-    if(!setupSDL())
+    if(!setup())
         return;
     Log::info("ENGINE", "Inited!");
-
-    const int frameDelay = 1000/TARGET_FPS;
+    const int frameDelay = 1000/App::maxFPS;
     Uint32 frameStart;
     int frameTime;
 
-    CORE_NODE->mainInit();
-    while (isRunning)
-    {
-        frameStart = SDL_GetTicks();
 
-        while(SDL_PollEvent(&event))
+    App::coreNode->mainInit();
+    while (App::isRunning)
+    {
+        while(App::event.poll())
         {
-            switch (event.type)
+            switch (App::event.type())
             {
                 case SDL_QUIT:
-                    isRunning = false;
+                    App::isRunning = false;
                     break;
                 
                 default:
@@ -65,16 +60,15 @@ void Engine::run()
             }
         }
 
-        SDL_SetRenderDrawColor(App::activeRender, App::bgColor.r, App::bgColor.g, App::App::bgColor.b, 255);
-        SDL_RenderClear(App::activeRender);
-
+        frameStart = SDL_GetTicks();
+        App::activeRender->setDrawColor(App::bgColor);
+        App::activeRender->clear();
         // Update vvvv
 
-        CORE_NODE->mainUpdate();
+        App::coreNode->mainUpdate();
 
         // Update ^^^^
-
-        SDL_RenderPresent(App::activeRender);
+        App::activeRender->present();
         
         frameTime = SDL_GetTicks() - frameStart;
         if(frameDelay > frameTime)
@@ -87,8 +81,8 @@ void Engine::run()
 
 void Engine::stop()
 {
-    SDL_DestroyRenderer(App::activeRender);
-    SDL_DestroyWindow(sdlWin);
+    App::activeRender->~Renderer();
+    App::window->~Window();
     SDL_Quit();
     return;
 }

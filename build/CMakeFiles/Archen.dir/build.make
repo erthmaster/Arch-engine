@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andriy/Arch-engine
+CMAKE_SOURCE_DIR = /home/andriy/Archen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andriy/Arch-engine/build
+CMAKE_BINARY_DIR = /home/andriy/Archen/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Archen.dir/depend.make
@@ -70,142 +70,206 @@ include CMakeFiles/Archen.dir/progress.make
 include CMakeFiles/Archen.dir/flags.make
 
 CMakeFiles/Archen.dir/src/app.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/app.cpp.o: /home/andriy/Arch-engine/src/app.cpp
+CMakeFiles/Archen.dir/src/app.cpp.o: /home/andriy/Archen/src/app.cpp
 CMakeFiles/Archen.dir/src/app.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Archen.dir/src/app.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/app.cpp.o -MF CMakeFiles/Archen.dir/src/app.cpp.o.d -o CMakeFiles/Archen.dir/src/app.cpp.o -c /home/andriy/Arch-engine/src/app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Archen.dir/src/app.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/app.cpp.o -MF CMakeFiles/Archen.dir/src/app.cpp.o.d -o CMakeFiles/Archen.dir/src/app.cpp.o -c /home/andriy/Archen/src/app.cpp
 
 CMakeFiles/Archen.dir/src/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/app.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/app.cpp > CMakeFiles/Archen.dir/src/app.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/app.cpp > CMakeFiles/Archen.dir/src/app.cpp.i
 
 CMakeFiles/Archen.dir/src/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/app.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/app.cpp -o CMakeFiles/Archen.dir/src/app.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/app.cpp -o CMakeFiles/Archen.dir/src/app.cpp.s
+
+CMakeFiles/Archen.dir/src/color.cpp.o: CMakeFiles/Archen.dir/flags.make
+CMakeFiles/Archen.dir/src/color.cpp.o: /home/andriy/Archen/src/color.cpp
+CMakeFiles/Archen.dir/src/color.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Archen.dir/src/color.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/color.cpp.o -MF CMakeFiles/Archen.dir/src/color.cpp.o.d -o CMakeFiles/Archen.dir/src/color.cpp.o -c /home/andriy/Archen/src/color.cpp
+
+CMakeFiles/Archen.dir/src/color.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/color.cpp.i"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/color.cpp > CMakeFiles/Archen.dir/src/color.cpp.i
+
+CMakeFiles/Archen.dir/src/color.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/color.cpp.s"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/color.cpp -o CMakeFiles/Archen.dir/src/color.cpp.s
 
 CMakeFiles/Archen.dir/src/engine.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/engine.cpp.o: /home/andriy/Arch-engine/src/engine.cpp
+CMakeFiles/Archen.dir/src/engine.cpp.o: /home/andriy/Archen/src/engine.cpp
 CMakeFiles/Archen.dir/src/engine.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Archen.dir/src/engine.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/engine.cpp.o -MF CMakeFiles/Archen.dir/src/engine.cpp.o.d -o CMakeFiles/Archen.dir/src/engine.cpp.o -c /home/andriy/Arch-engine/src/engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Archen.dir/src/engine.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/engine.cpp.o -MF CMakeFiles/Archen.dir/src/engine.cpp.o.d -o CMakeFiles/Archen.dir/src/engine.cpp.o -c /home/andriy/Archen/src/engine.cpp
 
 CMakeFiles/Archen.dir/src/engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/engine.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/engine.cpp > CMakeFiles/Archen.dir/src/engine.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/engine.cpp > CMakeFiles/Archen.dir/src/engine.cpp.i
 
 CMakeFiles/Archen.dir/src/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/engine.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/engine.cpp -o CMakeFiles/Archen.dir/src/engine.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/engine.cpp -o CMakeFiles/Archen.dir/src/engine.cpp.s
+
+CMakeFiles/Archen.dir/src/event.cpp.o: CMakeFiles/Archen.dir/flags.make
+CMakeFiles/Archen.dir/src/event.cpp.o: /home/andriy/Archen/src/event.cpp
+CMakeFiles/Archen.dir/src/event.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Archen.dir/src/event.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/event.cpp.o -MF CMakeFiles/Archen.dir/src/event.cpp.o.d -o CMakeFiles/Archen.dir/src/event.cpp.o -c /home/andriy/Archen/src/event.cpp
+
+CMakeFiles/Archen.dir/src/event.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/event.cpp.i"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/event.cpp > CMakeFiles/Archen.dir/src/event.cpp.i
+
+CMakeFiles/Archen.dir/src/event.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/event.cpp.s"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/event.cpp -o CMakeFiles/Archen.dir/src/event.cpp.s
 
 CMakeFiles/Archen.dir/src/func_container.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/func_container.cpp.o: /home/andriy/Arch-engine/src/func_container.cpp
+CMakeFiles/Archen.dir/src/func_container.cpp.o: /home/andriy/Archen/src/func_container.cpp
 CMakeFiles/Archen.dir/src/func_container.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Archen.dir/src/func_container.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/func_container.cpp.o -MF CMakeFiles/Archen.dir/src/func_container.cpp.o.d -o CMakeFiles/Archen.dir/src/func_container.cpp.o -c /home/andriy/Arch-engine/src/func_container.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Archen.dir/src/func_container.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/func_container.cpp.o -MF CMakeFiles/Archen.dir/src/func_container.cpp.o.d -o CMakeFiles/Archen.dir/src/func_container.cpp.o -c /home/andriy/Archen/src/func_container.cpp
 
 CMakeFiles/Archen.dir/src/func_container.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/func_container.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/func_container.cpp > CMakeFiles/Archen.dir/src/func_container.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/func_container.cpp > CMakeFiles/Archen.dir/src/func_container.cpp.i
 
 CMakeFiles/Archen.dir/src/func_container.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/func_container.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/func_container.cpp -o CMakeFiles/Archen.dir/src/func_container.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/func_container.cpp -o CMakeFiles/Archen.dir/src/func_container.cpp.s
 
 CMakeFiles/Archen.dir/src/logging.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/logging.cpp.o: /home/andriy/Arch-engine/src/logging.cpp
+CMakeFiles/Archen.dir/src/logging.cpp.o: /home/andriy/Archen/src/logging.cpp
 CMakeFiles/Archen.dir/src/logging.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Archen.dir/src/logging.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/logging.cpp.o -MF CMakeFiles/Archen.dir/src/logging.cpp.o.d -o CMakeFiles/Archen.dir/src/logging.cpp.o -c /home/andriy/Arch-engine/src/logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Archen.dir/src/logging.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/logging.cpp.o -MF CMakeFiles/Archen.dir/src/logging.cpp.o.d -o CMakeFiles/Archen.dir/src/logging.cpp.o -c /home/andriy/Archen/src/logging.cpp
 
 CMakeFiles/Archen.dir/src/logging.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/logging.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/logging.cpp > CMakeFiles/Archen.dir/src/logging.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/logging.cpp > CMakeFiles/Archen.dir/src/logging.cpp.i
 
 CMakeFiles/Archen.dir/src/logging.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/logging.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/logging.cpp -o CMakeFiles/Archen.dir/src/logging.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/logging.cpp -o CMakeFiles/Archen.dir/src/logging.cpp.s
 
 CMakeFiles/Archen.dir/src/mem_track.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/mem_track.cpp.o: /home/andriy/Arch-engine/src/mem_track.cpp
+CMakeFiles/Archen.dir/src/mem_track.cpp.o: /home/andriy/Archen/src/mem_track.cpp
 CMakeFiles/Archen.dir/src/mem_track.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Archen.dir/src/mem_track.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/mem_track.cpp.o -MF CMakeFiles/Archen.dir/src/mem_track.cpp.o.d -o CMakeFiles/Archen.dir/src/mem_track.cpp.o -c /home/andriy/Arch-engine/src/mem_track.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Archen.dir/src/mem_track.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/mem_track.cpp.o -MF CMakeFiles/Archen.dir/src/mem_track.cpp.o.d -o CMakeFiles/Archen.dir/src/mem_track.cpp.o -c /home/andriy/Archen/src/mem_track.cpp
 
 CMakeFiles/Archen.dir/src/mem_track.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/mem_track.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/mem_track.cpp > CMakeFiles/Archen.dir/src/mem_track.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/mem_track.cpp > CMakeFiles/Archen.dir/src/mem_track.cpp.i
 
 CMakeFiles/Archen.dir/src/mem_track.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/mem_track.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/mem_track.cpp -o CMakeFiles/Archen.dir/src/mem_track.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/mem_track.cpp -o CMakeFiles/Archen.dir/src/mem_track.cpp.s
 
 CMakeFiles/Archen.dir/src/node.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/node.cpp.o: /home/andriy/Arch-engine/src/node.cpp
+CMakeFiles/Archen.dir/src/node.cpp.o: /home/andriy/Archen/src/node.cpp
 CMakeFiles/Archen.dir/src/node.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Archen.dir/src/node.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/node.cpp.o -MF CMakeFiles/Archen.dir/src/node.cpp.o.d -o CMakeFiles/Archen.dir/src/node.cpp.o -c /home/andriy/Arch-engine/src/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Archen.dir/src/node.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/node.cpp.o -MF CMakeFiles/Archen.dir/src/node.cpp.o.d -o CMakeFiles/Archen.dir/src/node.cpp.o -c /home/andriy/Archen/src/node.cpp
 
 CMakeFiles/Archen.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/node.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/node.cpp > CMakeFiles/Archen.dir/src/node.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/node.cpp > CMakeFiles/Archen.dir/src/node.cpp.i
 
 CMakeFiles/Archen.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/node.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/node.cpp -o CMakeFiles/Archen.dir/src/node.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/node.cpp -o CMakeFiles/Archen.dir/src/node.cpp.s
 
 CMakeFiles/Archen.dir/src/numerics.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/numerics.cpp.o: /home/andriy/Arch-engine/src/numerics.cpp
+CMakeFiles/Archen.dir/src/numerics.cpp.o: /home/andriy/Archen/src/numerics.cpp
 CMakeFiles/Archen.dir/src/numerics.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Archen.dir/src/numerics.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/numerics.cpp.o -MF CMakeFiles/Archen.dir/src/numerics.cpp.o.d -o CMakeFiles/Archen.dir/src/numerics.cpp.o -c /home/andriy/Arch-engine/src/numerics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Archen.dir/src/numerics.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/numerics.cpp.o -MF CMakeFiles/Archen.dir/src/numerics.cpp.o.d -o CMakeFiles/Archen.dir/src/numerics.cpp.o -c /home/andriy/Archen/src/numerics.cpp
 
 CMakeFiles/Archen.dir/src/numerics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/numerics.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/numerics.cpp > CMakeFiles/Archen.dir/src/numerics.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/numerics.cpp > CMakeFiles/Archen.dir/src/numerics.cpp.i
 
 CMakeFiles/Archen.dir/src/numerics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/numerics.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/numerics.cpp -o CMakeFiles/Archen.dir/src/numerics.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/numerics.cpp -o CMakeFiles/Archen.dir/src/numerics.cpp.s
+
+CMakeFiles/Archen.dir/src/renderer.cpp.o: CMakeFiles/Archen.dir/flags.make
+CMakeFiles/Archen.dir/src/renderer.cpp.o: /home/andriy/Archen/src/renderer.cpp
+CMakeFiles/Archen.dir/src/renderer.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Archen.dir/src/renderer.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/renderer.cpp.o -MF CMakeFiles/Archen.dir/src/renderer.cpp.o.d -o CMakeFiles/Archen.dir/src/renderer.cpp.o -c /home/andriy/Archen/src/renderer.cpp
+
+CMakeFiles/Archen.dir/src/renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/renderer.cpp.i"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/renderer.cpp > CMakeFiles/Archen.dir/src/renderer.cpp.i
+
+CMakeFiles/Archen.dir/src/renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/renderer.cpp.s"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/renderer.cpp -o CMakeFiles/Archen.dir/src/renderer.cpp.s
 
 CMakeFiles/Archen.dir/src/shapes.cpp.o: CMakeFiles/Archen.dir/flags.make
-CMakeFiles/Archen.dir/src/shapes.cpp.o: /home/andriy/Arch-engine/src/shapes.cpp
+CMakeFiles/Archen.dir/src/shapes.cpp.o: /home/andriy/Archen/src/shapes.cpp
 CMakeFiles/Archen.dir/src/shapes.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Archen.dir/src/shapes.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/shapes.cpp.o -MF CMakeFiles/Archen.dir/src/shapes.cpp.o.d -o CMakeFiles/Archen.dir/src/shapes.cpp.o -c /home/andriy/Arch-engine/src/shapes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Archen.dir/src/shapes.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/shapes.cpp.o -MF CMakeFiles/Archen.dir/src/shapes.cpp.o.d -o CMakeFiles/Archen.dir/src/shapes.cpp.o -c /home/andriy/Archen/src/shapes.cpp
 
 CMakeFiles/Archen.dir/src/shapes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/shapes.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Arch-engine/src/shapes.cpp > CMakeFiles/Archen.dir/src/shapes.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/shapes.cpp > CMakeFiles/Archen.dir/src/shapes.cpp.i
 
 CMakeFiles/Archen.dir/src/shapes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/shapes.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Arch-engine/src/shapes.cpp -o CMakeFiles/Archen.dir/src/shapes.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/shapes.cpp -o CMakeFiles/Archen.dir/src/shapes.cpp.s
+
+CMakeFiles/Archen.dir/src/window.cpp.o: CMakeFiles/Archen.dir/flags.make
+CMakeFiles/Archen.dir/src/window.cpp.o: /home/andriy/Archen/src/window.cpp
+CMakeFiles/Archen.dir/src/window.cpp.o: CMakeFiles/Archen.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Archen.dir/src/window.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Archen.dir/src/window.cpp.o -MF CMakeFiles/Archen.dir/src/window.cpp.o.d -o CMakeFiles/Archen.dir/src/window.cpp.o -c /home/andriy/Archen/src/window.cpp
+
+CMakeFiles/Archen.dir/src/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Archen.dir/src/window.cpp.i"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Archen/src/window.cpp > CMakeFiles/Archen.dir/src/window.cpp.i
+
+CMakeFiles/Archen.dir/src/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Archen.dir/src/window.cpp.s"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Archen/src/window.cpp -o CMakeFiles/Archen.dir/src/window.cpp.s
 
 # Object files for target Archen
 Archen_OBJECTS = \
 "CMakeFiles/Archen.dir/src/app.cpp.o" \
+"CMakeFiles/Archen.dir/src/color.cpp.o" \
 "CMakeFiles/Archen.dir/src/engine.cpp.o" \
+"CMakeFiles/Archen.dir/src/event.cpp.o" \
 "CMakeFiles/Archen.dir/src/func_container.cpp.o" \
 "CMakeFiles/Archen.dir/src/logging.cpp.o" \
 "CMakeFiles/Archen.dir/src/mem_track.cpp.o" \
 "CMakeFiles/Archen.dir/src/node.cpp.o" \
 "CMakeFiles/Archen.dir/src/numerics.cpp.o" \
-"CMakeFiles/Archen.dir/src/shapes.cpp.o"
+"CMakeFiles/Archen.dir/src/renderer.cpp.o" \
+"CMakeFiles/Archen.dir/src/shapes.cpp.o" \
+"CMakeFiles/Archen.dir/src/window.cpp.o"
 
 # External object files for target Archen
 Archen_EXTERNAL_OBJECTS =
 
 obj/libArchen.a: CMakeFiles/Archen.dir/src/app.cpp.o
+obj/libArchen.a: CMakeFiles/Archen.dir/src/color.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/engine.cpp.o
+obj/libArchen.a: CMakeFiles/Archen.dir/src/event.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/func_container.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/logging.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/mem_track.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/node.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/numerics.cpp.o
+obj/libArchen.a: CMakeFiles/Archen.dir/src/renderer.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/src/shapes.cpp.o
+obj/libArchen.a: CMakeFiles/Archen.dir/src/window.cpp.o
 obj/libArchen.a: CMakeFiles/Archen.dir/build.make
 obj/libArchen.a: CMakeFiles/Archen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andriy/Arch-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library obj/libArchen.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andriy/Archen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library obj/libArchen.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Archen.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Archen.dir/link.txt --verbose=$(VERBOSE)
 
@@ -218,6 +282,6 @@ CMakeFiles/Archen.dir/clean:
 .PHONY : CMakeFiles/Archen.dir/clean
 
 CMakeFiles/Archen.dir/depend:
-	cd /home/andriy/Arch-engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andriy/Arch-engine /home/andriy/Arch-engine /home/andriy/Arch-engine/build /home/andriy/Arch-engine/build /home/andriy/Arch-engine/build/CMakeFiles/Archen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/andriy/Archen/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andriy/Archen /home/andriy/Archen /home/andriy/Archen/build /home/andriy/Archen/build /home/andriy/Archen/build/CMakeFiles/Archen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Archen.dir/depend
 

@@ -1,16 +1,32 @@
 #pragma once
 #include "color.hpp"
-#include <SDL2/SDL.h>
+#include "node.hpp"
+#include "renderer.hpp"
+#include "window.hpp"
+#include "event.hpp"
 
-class App
+class App final
 {
     public:
         App() = delete;
-        static void init(const int _winWidth, const int _screenHeight, char* _winTitle);
-        static void init(const int _winWidth, const int _winHeight, char* _winTitle, SDL_Color _bgColor);
 
-        static SDL_Renderer* activeRender;
-        static void setRenderer(SDL_Renderer* renderer);
+        static void init(
+                            int = 800, 
+                            int = 600,
+                            const char* = "Archen game",
+                            float = 60,
+                            Color = LIGHT_GRAY,
+                            Node* = nullptr,
+                            Renderer* = nullptr
+                        );
+
+        static bool isRunning;
+        static float maxFPS;
+
+        static Event event;
+        static Renderer* activeRender;
+        static Window* window;
+        static Node* coreNode;
 
         static int winWidth;
         static int winHeight;

@@ -83,6 +83,7 @@
         "expected": "cpp",
         "source_location": "cpp",
         "typeindex": "cpp",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "*.rh": "cpp"
     }
 }

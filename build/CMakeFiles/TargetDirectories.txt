@@ -1,7 +1,7 @@
-/home/andriy/Arch-engine/build/CMakeFiles/Archen.dir
-/home/andriy/Arch-engine/build/CMakeFiles/edit_cache.dir
-/home/andriy/Arch-engine/build/CMakeFiles/rebuild_cache.dir
-/home/andriy/Arch-engine/build/CMakeFiles/list_install_components.dir
-/home/andriy/Arch-engine/build/CMakeFiles/install.dir
-/home/andriy/Arch-engine/build/CMakeFiles/install/local.dir
-/home/andriy/Arch-engine/build/CMakeFiles/install/strip.dir
+/home/andriy/Archen/build/CMakeFiles/Archen.dir
+/home/andriy/Archen/build/CMakeFiles/edit_cache.dir
+/home/andriy/Archen/build/CMakeFiles/rebuild_cache.dir
+/home/andriy/Archen/build/CMakeFiles/list_install_components.dir
+/home/andriy/Archen/build/CMakeFiles/install.dir
+/home/andriy/Archen/build/CMakeFiles/install/local.dir
+/home/andriy/Archen/build/CMakeFiles/install/strip.dir

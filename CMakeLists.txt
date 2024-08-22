@@ -33,4 +33,4 @@ install(TARGETS Archen
 )
 
 install(DIRECTORY include/ArchenLib/ DESTINATION /usr/include/ArchenLib)
-install(FILES include/Archen DESTINATION /usr/include)
+install(FILES include/Archen.hpp DESTINATION /usr/include)

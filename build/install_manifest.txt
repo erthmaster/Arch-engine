@@ -1,11 +1,14 @@
 /usr/lib/libArchen.a
 /usr/include/ArchenLib/logging.hpp
 /usr/include/ArchenLib/engine.hpp
+/usr/include/ArchenLib/renderer.hpp
 /usr/include/ArchenLib/numerics.hpp
 /usr/include/ArchenLib/node.hpp
 /usr/include/ArchenLib/mem_track.hpp
 /usr/include/ArchenLib/func_container.hpp
 /usr/include/ArchenLib/color.hpp
 /usr/include/ArchenLib/shapes.hpp
+/usr/include/ArchenLib/event.hpp
+/usr/include/ArchenLib/window.hpp
 /usr/include/ArchenLib/app.hpp
-/usr/include/Archen
+/usr/include/Archen.hpp

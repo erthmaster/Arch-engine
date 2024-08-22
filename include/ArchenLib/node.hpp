@@ -35,7 +35,6 @@ class Node
         void removeNode(int index);
     
     friend class Engine;
-    friend class Node;
 };
 
 template<typename N>

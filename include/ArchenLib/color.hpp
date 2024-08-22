@@ -1,6 +1,5 @@
 #pragma once
 #include <cstdint>
-#include <SDL2/SDL.h>
 
 #define BLACK       {0,0,0,255}
 #define WHITE       {255,255,255,255}
@@ -27,4 +26,11 @@
 #define SILVER      {192,192,192,255}
 #define TAN         {210,180,140,255}
 
-typedef SDL_Color Color;
+class Color
+{
+    public:
+        uint8_t r;
+        uint8_t g;
+        uint8_t b;
+        uint8_t a;
+};

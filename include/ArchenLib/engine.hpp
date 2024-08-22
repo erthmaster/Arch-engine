@@ -1,27 +1,17 @@
 #pragma once
 #include "node.hpp"
 #include "app.hpp"
-#include <SDL2/SDL.h>
+#include "event.hpp"
+#include "window.hpp"
 
 class Engine final
 {
-    bool isRunning = false;
-    SDL_Event event;
-
-    SDL_Window* sdlWin;
-
-    Node* CORE_NODE;
-
-    bool setupSDL();
+    static bool setup();
 
     public:
-        const float TARGET_FPS;
-
-        Engine(Node* coreNode, const float targetFps);
-        ~Engine();
-
-        bool state();
-        void run();
-        void stop();
+        Engine() = delete;
+        static bool state();
+        static void run();
+        static void stop();
 };
 
