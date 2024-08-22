@@ -8,8 +8,7 @@ class Window
     void* getSdlWin();
 
     public:
-        Window();
-        bool create(const char *title, int x, int y, int w, int h, uint32_t flags);
+        Window(const char *title, int x, int y, int w, int h, uint32_t flags);
         ~Window();
 
     friend class Renderer;

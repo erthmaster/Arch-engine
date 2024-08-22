@@ -20,8 +20,7 @@ void App::init(
                 const char* _winTitle,
                 float _maxFps,
                 Color _bgColor, 
-                Node* _coreNode,
-                Renderer* _renderer
+                Node* _coreNode
             )
 {
     winWidth    = _winWidth;

@@ -2,9 +2,8 @@
 #include <SDL2/SDL.h>
 #include "logging.hpp"
 #include <string>
-
-Window::Window()
-: impl_(std::make_unique<Impl>()) {}
+#include <iostream>
+#include <memory>
 
 class Window::Impl
 {
@@ -18,12 +17,10 @@ class Window::Impl
         }
 };
 
-bool Window::create(const char *title, int x, int y, int w, int h, uint32_t flags)
+Window::Window(const char *title, int x, int y, int w, int h, uint32_t flags)
+: impl_(std::make_unique<Impl>())
 {
-    Log::pr("Program runs");
     impl_->sdlWin = SDL_CreateWindow(title, x, y, w, h, flags);
-    Log::pr("Program runs");
-    return true;
 }  
 
 void* Window::getSdlWin()

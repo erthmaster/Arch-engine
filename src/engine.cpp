@@ -2,7 +2,7 @@
 #include "engine.hpp"
 #include "logging.hpp"
 #include <SDL2/SDL.h>
-#define LOG(x) std::cout << x << std::endl;
+#include <SDL2/SDL_image.h>
 
 bool Engine::state() { return App::isRunning; }
 
@@ -13,16 +13,15 @@ bool Engine::setup()
         return false;
     }
 
-    if(!App::window->create(App::winTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, App::winWidth, App::winHeight, SDL_WINDOW_SHOWN));
-    {
+    App::window = new Window(App::winTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, App::winWidth, App::winHeight, SDL_WINDOW_SHOWN);
+    if(App::window == nullptr){
         Log::errSDL("SDL_CreateWindow Error");
         SDL_Quit();
         return false;
     }
 
-    if(App::activeRender == nullptr)
-        App::activeRender = new Renderer(App::window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
+    App::activeRender = new Renderer(App::window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if(App::activeRender == nullptr) {
         Log::errSDL("SDL_CreateRenderer Error");
         App::window->~Window();

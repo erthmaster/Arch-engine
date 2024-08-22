@@ -16,8 +16,7 @@ class App final
                             const char* = "Archen game",
                             float = 60,
                             Color = LIGHT_GRAY,
-                            Node* = nullptr,
-                            Renderer* = nullptr
+                            Node* = nullptr
                         );
 
         static bool isRunning;
