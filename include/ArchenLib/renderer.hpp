@@ -7,7 +7,7 @@
 class Renderer
 {
     class Impl;
-    std::unique_ptr<Impl> impl_;
+    std::unique_ptr<Impl> pImpl;
 
     public:
         Renderer(Window *window, int index, uint32_t flags);

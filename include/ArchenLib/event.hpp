@@ -4,7 +4,7 @@
 class Event
 {
     class Impl;
-    std::unique_ptr<Impl> impl_;
+    std::unique_ptr<Impl> pImpl;
 
     public:
         Event();        

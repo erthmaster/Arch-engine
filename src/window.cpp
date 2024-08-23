@@ -18,17 +18,17 @@ class Window::Impl
 };
 
 Window::Window(const char *title, int x, int y, int w, int h, uint32_t flags)
-: impl_(std::make_unique<Impl>())
+: pImpl(std::make_unique<Impl>())
 {
-    impl_->sdlWin = SDL_CreateWindow(title, x, y, w, h, flags);
+    pImpl->sdlWin = SDL_CreateWindow(title, x, y, w, h, flags);
 }  
 
 void* Window::getSdlWin()
 {
-    return impl_->sdlWin;
+    return pImpl->sdlWin;
 }
 
 Window::~Window()
 {
-    SDL_DestroyWindow(impl_->sdlWin);
+    SDL_DestroyWindow(pImpl->sdlWin);
 }

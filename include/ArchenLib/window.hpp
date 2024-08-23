@@ -4,7 +4,7 @@
 class Window
 {
     class Impl;
-    std::unique_ptr<Impl> impl_;
+    std::unique_ptr<Impl> pImpl;
     void* getSdlWin();
 
     public:

@@ -18,16 +18,16 @@ class Event::Impl
 };
 
 Event::Event()
-: impl_(std::make_unique<Impl>()) {}
+: pImpl(std::make_unique<Impl>()) {}
 
 Event::~Event() = default;
 
 bool Event::poll()
 {
-    return impl_->pollEvent();
+    return pImpl->pollEvent();
 }
 
 int Event::type() const
 {
-    return impl_->getEventType();
+    return pImpl->getEventType();
 }
